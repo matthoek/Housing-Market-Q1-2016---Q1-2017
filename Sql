@@ -1,0 +1,91 @@
+(SQLite v3.20.1)
+
+BEGIN TRANSACTION;
+
+/* Create a table called PROPERTIES */
+CREATE TABLE PROPERTIES(ID Integer PRIMARY KEY, Name text, Country text, Q12016 integer, Q12017 integer);
+
+/* Create records in this table */
+INSERT INTO PROPERTIES VALUES(1,‘Katarina’,‘Austria’,105.9,108.9);
+INSERT INTO PROPERTIES VALUES (2, ‘Habte’, ‘Australia’, 101.9, 110.9);
+INSERT INTO PROPERTIES VALUES (3, ‘Matthias’, ‘Belgium’, 100.5, 102.6);
+INSERT INTO PROPERTIES VALUES (4, ‘Jurado’, ‘Brazil’, 93.9, 90.3);
+INSERT INTO PROPERTIES VALUES (5, ‘Robert’, ‘Canada’, 104.1, 116.3);
+INSERT INTO PROPERTIES VALUES (6, ‘Nadeem’, ‘Switzerland’, 102.0, 101.9);
+INSERT INTO PROPERTIES VALUES (7, ‘Sharron’, ‘Chile’, 100.7, 101.1);
+INSERT INTO PROPERTIES VALUES (8, ‘Romea’, ‘China’, 102.8, 120);
+INSERT INTO PROPERTIES VALUES (9, ‘Nikon’, ‘Columbia’, 103.4, 105.3);
+INSERT INTO PROPERTIES VALUES (10, ‘Onofre’, ‘Czech Republic’, 103.0, 113.7);
+INSERT INTO PROPERTIES VALUES (11, ‘Scott’, ‘Germany’, 104.4, 109.0);
+INSERT INTO PROPERTIES VALUES (12, ‘Herczeg’, ‘Denmark’, 103.6, 106.9);
+INSERT INTO PROPERTIES VALUES (13, ‘Károly’, ‘Estonia’, 101.1, 105.5);
+INSERT INTO PROPERTIES VALUES (14, ‘Jason’, ‘Spain’, 103.3, 107.0);
+INSERT INTO PROPERTIES VALUES (15, ‘Michael’, ‘Finland’, 104.7, 107.2);
+INSERT INTO PROPERTIES VALUES (16, ‘Allen’, ‘UK’, 104.3, 107.2);
+INSERT INTO PROPERTIES VALUES (17, ‘Naja’, ‘Greece’, 99.3, 96.5);
+INSERT INTO PROPERTIES VALUES (18, ‘Olsen’, ‘Hungary’, 109.3, 119.3);
+INSERT INTO PROPERTIES VALUES (19, ‘Mikael’, ‘Indonesia’, 100.2, 99.6);
+INSERT INTO PROPERTIES VALUES (20, ‘Mäki’, ‘Ireland’, 103.2, 113.5);
+INSERT INTO PROPERTIES VALUES (21, ‘Finnish’, ‘Israel’, 105.6, 110.7);
+INSERT INTO PROPERTIES VALUES (22, ‘Onwumelu’, ‘India’ , 98.9, 106.0);
+INSERT INTO PROPERTIES VALUES (23, ‘Christin’ , ‘Iceland’ , 104.3, 113.5);
+INSERT INTO PROPERTIES VALUES (24, ‘Peter’, ‘Italy’, 100.4, 113.5);
+INSERT INTO PROPERTIES VALUES (25, ‘Robert’, ‘Japan’, 101.4, 105.1);
+INSERT INTO PROPERTIES VALUES (26, ‘Elliot’, ‘Korea’, 101.9, 100.0);
+INSERT INTO PROPERTIES VALUES (27, ‘Mike’, ‘Luxembourg’, 103.8, 108.9);
+INSERT INTO PROPERTIES VALUES (28, ‘Hadad’, ‘Latvia’, 104.7, 110.8);
+INSERT INTO PROPERTIES VALUES (29, ‘Pavel’, ‘Norway’, 100.9, 108.3);
+INSERT INTO PROPERTIES VALUES (30, ‘Deborah’, ‘New Zealand’, 106.4, 118.4);
+INSERT INTO PROPERTIES VALUES (31, ‘Kasim’, ‘Poland’, 101.1, 109.7);
+INSERT INTO PROPERTIES VALUES (32, ‘Odinakachi’, ‘Portugal’, 103.5, 109.7);
+INSERT INTO PROPERTIES VALUES (33, ‘Uwe’, ‘Russia’, 90.9, 84.3);
+INSERT INTO PROPERTIES VALUES (34, ‘Timothée’, ‘Sweden’, 105.5, 112.1);
+INSERT INTO PROPERTIES VALUES (35, ‘Theo’, ‘Slovenia’,101.7, 106.3);
+INSERT INTO PROPERTIES VALUES (36, ‘Laurette’, ‘Turkey’, 105.1, 106.6);
+INSERT INTO PROPERTIES VALUES (37, ‘Fenyvesi’, ‘United States’, 103.3, 107.5);
+INSERT INTO PROPERTIES VALUES (38, ‘Jason’, ‘South Africa’, 100.4, 99.6);
+COMMIT 
+
+/* Display all records from this table */ 
+SELECT * FROM PROPERTIES;
+           
+Result
+$sqlite3 database.sdb < main.sql
+1|Katarina|Austria|105.9|108.9
+2|Habte|Australia|101.9|110.9
+3|Matthias|Belgium|100.5|102.6
+4|Jurado|Brazil|93.9|90.3
+5|Robert|Canada|104.1|116.3
+6|Nadeem|Switzerland|102|101.9
+7|Sharron|Chile|100.7|101.1
+8|Romea|China|102.8|120
+9|Nikon|Columbia|103.4|105.3
+10|Onofre|Czech Republic|103|113.7
+11|Scott|Germany|104.4|109
+12|Herczeg|Denmark|103.6|106.9
+13|Károly|Estonia|101.1|105.5
+14|Jaso|Spain|103.3|107
+15|Michael|Finland|104.7|107.2
+16|Allen|UK|104.3|107.2
+17|Naja|Greece|99.3|96.5
+18|Olsen|Hungary|109.3|119.3
+19|Mikael|Indonesia|100.2|99.6
+20|Mäki|Ireland|103.2|113.5
+21|Finnish|Israel|105.6|110.7
+22|Onwumelu|India|98.9|106
+23|Christin|Iceland|104.3|113.5
+24|Peter|Italy|100.4|113.5
+25|Robert|Japan|101.4|105.1
+26|Elliot|Korea|101.9|100
+27|Mike|Luxembourg|103.8|108.9
+28|Hadad|Latvia|104.7|110.8
+29|Pavel|Norway|100.9|108.3
+30|Deborah|New Zealand|106.4|118.4
+31|Kasim|Poland|101.1|109.7
+32|Odinakachi|Portugal|103.5|109.7
+33|Uwe|Russia|90.9|84.3
+34|Timothée|Sweden|105.5|112.1
+35|Theo|Slovenia|101.7|106.3
+36|Laurette|Turkey|105.1|106.6
+37|Fenyvesi|United States|103.3|107.5
+38|Jason|South Africa|100.4|99.6
